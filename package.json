@@ -1,0 +1,32 @@
+{
+    "name": "@ptolemy2002/cra-template-react-library",
+    "version": "1.6.1",
+    "description": "CRA Template for creating a React Library",
+    "author": "Ptolemy2002",
+    "license": "MIT",
+    "keywords": [
+        "react",
+        "create-react-app",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ptolemy2002/cra-template-library"
+    },
+    "scripts": {
+        "release": "npm publish --access public",
+        "release-patch": "npm version patch && npm run release",
+        "release-minor": "npm version minor && npm run release",
+        "release-major": "npm version major && npm run release"
+    },
+    "files": [
+        "template",
+        "template.json"
+    ],
+    "engines": {
+        "node": ">=14"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5"
+    }
+}
