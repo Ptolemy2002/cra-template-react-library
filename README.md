@@ -6,6 +6,12 @@ For now, the library makes use of React 18 and does not use TypeScript. To apply
 
 ## Commands
 The following commands exist in the project resulting from applying this template:
+- `npm run uninstall` - Uninstalls all dependencies for the library
+- `npm run reinstall` - Uninstalls and then Reinstalls all dependencies for the library
+- `npm run example-uninstall` - Uninstalls all dependencies for the example app
+- `npm run example-install` - Installs all dependencies for the example app
+- `npm run example-reinstall` - Uninstalls and then Reinstalls all dependencies for the example app
+- `npm run example-start` - Starts the example app after building the library
 - `npm run build` - Builds the library
 - `npm run release` - Publishes the library to npm without changing the version
 - `npm run release-patch` - Publishes the library to npm with a patch version bump
