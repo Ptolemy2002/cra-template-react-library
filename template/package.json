@@ -6,17 +6,19 @@
         "index.js"
     ],
     "scripts": {
-        "uninstall": "rm -rf node_modules",
-        "reinstall": "npm run uninstall && npm install",
-        "example-uninstall": "cd example && npm run uninstall",
-        "example-install": "cd example && npm install",
-        "example-reinstall": "cd example && npm run reinstall",
-        "example-start": "npm run build && cd example && npm start",
         "build": "esbuild src/index.js --bundle --format=cjs --outfile=index.js",
-        "release": "npm run build && npm publish --access public",
-        "release-patch": "npm version patch && npm run release",
-        "release-minor": "npm version minor && npm run release",
-        "release-major": "npm version major && npm run release"
+
+        "uninstall": "bash ./scripts/uninstall.sh",
+        "reinstall": "bash ./scripts/reinstall.sh",
+        "example-uninstall": "bash ./scripts/example-uninstall.sh",
+        "example-install": "bash ./scripts/example-install.sh",
+        "example-reinstall": "bash ./scripts/example-reinstall.sh",
+        "example-start": "npm run build && cd example && npm start",
+
+        "release": "bash ./scripts/release.sh",
+        "release-patch": "bash ./scripts/release.sh patch",
+        "release-minor": "bash ./scripts/release.sh minor",
+        "release-major": "bash ./scripts/release.sh major"
     },
     "description": "Example of a React library",
     "license": "ISC",

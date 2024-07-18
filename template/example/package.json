@@ -21,8 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "uninstall": "rm -rf node_modules",
-    "reinstall": "npm run uninstall && npm install",
+    "uninstall": "bash ./scripts/uninstall.sh",
+    "reinstall": "bash ./scripts/reinstall.sh",
+    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
