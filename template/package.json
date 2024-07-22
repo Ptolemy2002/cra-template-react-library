@@ -8,6 +8,7 @@
     "scripts": {
         "build": "esbuild src/index.js --bundle --format=cjs --outfile=index.js",
 
+        "postinstall": "npx typesync",
         "uninstall": "bash ./scripts/uninstall.sh",
         "reinstall": "bash ./scripts/reinstall.sh",
         "example-uninstall": "bash ./scripts/example-uninstall.sh",
