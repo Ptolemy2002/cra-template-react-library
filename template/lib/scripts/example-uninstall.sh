@@ -1,6 +1,5 @@
 #! /usr/bin/bash
 echo "Switching to the example directory"
-cd example
+cd ../example
 
-echo "Installing all dependencies"
-npm install
+bash scripts/uninstall.sh
