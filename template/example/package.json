@@ -2,6 +2,11 @@
   "name": "example",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+        "type": "git",
+        "url": "www.github.com",
+        "directory": "example"
+  },
   "dependencies": {
     "@local/lib": "file:../lib",
     "@types/react": "^18.3.3",
